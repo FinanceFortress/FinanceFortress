@@ -39,6 +39,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 body{
 	background: #1E1E1E;
 	font-family: 'Montserrat';
+	background-color: #fff;
 }
 html{
 	overflow-x: hidden;
@@ -77,12 +78,13 @@ main{
 
 
 .header__logo img{
-    max-width: 80%;
+    width: 100%;
+	border-radius: 3%;
 
 }
 .header__logo{
-    max-width: 8%;
-	margin-left: 10px;
+    max-width: 14%;
+	margin-left: 4px;
 }
 .header-top__container{
     display: flex;
@@ -131,16 +133,17 @@ main{
 }
 @media (max-width: 414px) {
 	.header__logo img{
-		max-width: 120%;
+		width: 120%;
 	}
 }
 .header-down__conteainer{
 	display: flex;
+	gap: 3%;
 	margin: 6% auto 3% auto;
 }
 .header-down__conteainer_left{
 	width: 45%;
-	margin-left: 10px;
+	margin-left: 4px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -148,14 +151,105 @@ main{
 }
 .header-down__conteainer_leftTitle{
 	font-weight: 700;
-	font-size: 3rem;
+	font-size: 2rem;
 	line-height: 125%;
 	color: #FFFFFF;
 }
 .header-down__conteainer_leftSubTitle{
-	margin-top: 10px;
 	font-weight: 400;
 	font-size: 1.125rem;
 	line-height: 150%;
 	color: #E1E1E1;
+}
+.header-down__conteainer_right img{
+	max-width: 100%;
+}
+.header-down__conteainer_right{
+	margin-right: 4px;
+}
+
+@media (max-width: 1100px) {
+	.header-down__conteainer_leftTitle{
+		font-size: 2rem;
+	}
+	.header-down__conteainer_leftSubTitle{
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 880px) {
+	.header{
+		padding-bottom: 10%;
+	}
+	.header-down__conteainer{
+		flex-direction: column;
+	}
+	.header-down__conteainer_left{
+		width: 100%;
+		margin-right: 10px;
+	}
+	.header-down__conteainer_leftSubTitle{
+		text-align: center;
+		
+	}
+
+	.header-down__conteainer_leftTitle{
+		text-align: center;
+
+	}
+	.header-down__conteainer_right{
+		margin: 15px 4px 0 4px;
+		text-align: center;
+		display: none;
+	}
+	.header-down__conteainer_leftTitle{
+		font-size: 1.8rem;
+	}
+
+}
+/* ==================aboutUs=================== */
+.aboutUs{
+	position: relative;
+	margin: 8% auto;
+}
+.aboutAs__content{
+	background-color: #232626;
+	width: 70%;
+}
+.aboutUs__img img{
+	position: absolute;
+	z-index: -10;
+	width: 60%;
+	margin: 0 0 0 8%;
+}
+
+.aboutAs__content{
+	text-align: center;
+	padding: 9% 5% 10% 9%;
+
+}
+.aboutAs__content_title{
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 132%;
+	color: #FFFFFF;
+}
+.aboutAs__content_text{
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 150%;
+	color: #E1E1E1;
+}
+.aboutUs__conteiner{
+	display: flex;
+	justify-content: flex-end;
+	padding: 15% 8% 0 0
+}
+@media (max-width: 1038px) {
+	.aboutAs__content_text{
+		font-size: 1.5vw;
+	}
+	.aboutAs__content_title{
+		font-size: 2.5vw;
+	}
 }
