@@ -115,11 +115,16 @@ main{
     font-size: 1rem;
     line-height: 125%;
     color: #FFFFFF;
-	transition: all .4s ease;
 }
-.menu__link:hover{
-	color: rgba(238, 155, 31, 0.952);
-	transition: all .4s ease;
+
+@media (min-width: 821px) {
+	.menu__link:hover{
+		transition: all .4s ease;
+		color: rgba(238, 155, 31, 0.952);
+	}
+	.menu__link{
+		transition: all .4s ease;
+	}
 }
 @media (max-width: 821px) {
 	.menu__link{
