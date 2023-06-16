@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/icon/logo.jpg" type="image/x-icon" />
     <title>FinanceFortress</title>
-    <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="font/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
 </head>
 <body>
@@ -22,8 +24,8 @@
                 <nav class="header__menu">
                     <ul class="menu__list">
                         <li class="menu__item"><a href="#aboutUs" class="menu__link">About us</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Advices</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>  
+                        <li class="menu__item"><a href="#advices" class="menu__link">Advices</a></li>
+                        <li class="menu__item"><a href="#contact" class="menu__link">Contact us</a></li>  
                     </ul>
                 </nav>  
             </div> 
@@ -41,14 +43,88 @@
                 <div class="aboutUs__conteiner">
                     <div class="aboutAs__content">
                         <div class="aboutAs__content_title">About Us</div><br>
-                        <p class="aboutAs__content_text">We are a team of marketers who work together to help your business succeed in the market. With the help of our knowledge, experience and creative solutions, we help to increase your brand awareness, attract new customers and increase your profits.</p>
-                        <br>
-                        <p class="aboutAs__content_text">We believe that effective marketing is not only about advertising and promoting a product. It's about creating meaningful connections with consumers and developing long-term relationships. We will help you understand your audience, know</p>
+                        <p class="aboutAs__content_text">We are a team of personal finance experts dedicated to providing you with the best advice, resources and tools to achieve financial wellness.</p><br>
+                        <p class="aboutAs__content_text">Our mission is to help you manage your finances, make smart decisions, and build a sustainable financial future. We understand that personal finance can be complex, which is why we focus on providing simple and straightforward solutions to help you achieve your financial goals.</p>
                     </div>
-                </div>
-                
+                </div>  
             </div>
+            <div class="helpU">
+                <div class="helpU__container container">
+                    <p class="helpU__text">Types of investments and their characteristics</p>
+                </div>
+            </div>
+
+            	<!-- Slider main container -->
+<div class="swiper container" id="advices">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <p class="swiper__title">Tips for budgeting</p>
+        <ul class="swiper__list">
+            <li class="swiper__item icon-radio-unchecked">  Create a monthly budget and track your income and expenses.</li>
+            <li class="swiper__item icon-radio-unchecked">  Indicate how much of your income should be allocated to major categories such as food, housing, transportation, entertainment, etc.</li>
+            <li class="swiper__item icon-radio-unchecked">  Emphasize the importance of having a small contingency fund.</li>
+        </ul>
+      </div>
+
+      <div class="swiper-slide">
+        <p class="swiper__title">Tips for planning expenses</p>
+        <ul class="swiper__list">
+            <li class="swiper__item icon-radio-unchecked">  Define your financial goals and create a plan to achieve each of them.</li>
+            <li class="swiper__item icon-radio-unchecked">  Consider implementing the "50/30/20" system, where 50% of income goes to basic expenses, 30% to personal needs, and 20% to savings and debt repayment.</li>
+            <li class="swiper__item icon-radio-unchecked">  Offer strategies to effectively manage smart purchases and avoid overspending.</li>
+        </ul>
+      </div>
+
+      <div class="swiper-slide">
+        <p class="swiper__title">Investment advice</p>
+        <ul class="swiper__list">
+            <li class="swiper__item icon-radio-unchecked">  Explain the benefits of long-term investing and talk about different types of investments such as stocks, bonds, funds, etc.</li>
+            <li class="swiper__item icon-radio-unchecked">  Provide the basic principles of portfolio diversification and the importance of risk allocation.</li>
+            <li class="swiper__item icon-radio-unchecked">  Offer recommendations for finding qualified financial advisors or self-investing resources.</li>
+        </ul>
+      </div>
+
+      <div class="swiper-slide">
+        <p class="swiper__title">Tips for saving and earning</p>
+        <ul class="swiper__list">
+            <li class="swiper__item icon-radio-unchecked">  Consider different savings strategies, such as retirement funds, deposits, investment accounts, and more.</li>
+            <li class="swiper__item icon-radio-unchecked">  Suggest ideas for additional income, such as freelancing, distributed work or passive income.</li>
+            <li class="swiper__item icon-radio-unchecked">  Discuss the importance of smart debt management and provide advice on paying off debt.</li>
+        </ul>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <!-- <div class="swiper-scrollbar"></div> -->
+  </div>
+  
         </main>
-        <footer class="footer"></footer>
+    </div>
+        <footer class="footer" id="contact">
+            <div class="header-top__container">
+                <div class="header__logo"><img src="img/icon/logo.jpg"></div>
+                <nav class="header__menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#aboutUs" class="menu__link">About us</a></li>
+                        <li class="menu__item"><a href="#advices" class="menu__link">Advices</a></li>
+                        <li class="menu__item"><a href="#contact" class="menu__link">Contact us</a></li>  
+                    </ul>
+                </nav>  
+            </div>
+            <hr>
+            <div class="contact">
+                <p>© 2023 FinanceFortress. All Rights Reserved.</p>
+            </div> 
+        </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

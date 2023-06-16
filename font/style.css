@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?oeve15');
-  src:  url('fonts/icomoon.eot?oeve15#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?oeve15') format('truetype'),
-    url('fonts/icomoon.woff?oeve15') format('woff'),
-    url('fonts/icomoon.svg?oeve15#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?awh5ky');
+  src:  url('fonts/icomoon.eot?awh5ky#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?awh5ky') format('truetype'),
+    url('fonts/icomoon.woff?awh5ky') format('woff'),
+    url('fonts/icomoon.svg?awh5ky#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -31,9 +31,12 @@
 .icon-arrow-left2:before {
   content: "\ea40";
 }
+.icon-radio-unchecked:before {
+  content: "\ea56";
+  color: #FFA500;
+}
 .icon-facebook2:before {
   content: "\ea91";
-  color: blue;
 }
 .icon-instagram:before {
   content: "\ea92";

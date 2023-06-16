@@ -115,6 +115,7 @@ main{
     font-size: 1rem;
     line-height: 125%;
     color: #FFFFFF;
+	transition: all .4s ease;
 }
 
 @media (min-width: 821px) {
@@ -230,7 +231,7 @@ main{
 
 .aboutAs__content{
 	text-align: center;
-	padding: 9% 5% 10% 9%;
+	padding: 10% 4% 10% 8%;
 
 }
 .aboutAs__content_title{
@@ -256,5 +257,114 @@ main{
 	}
 	.aboutAs__content_title{
 		font-size: 2.5vw;
+	}
+}
+/* ================helpU================== */
+.helpU{
+	margin: 0 0 8% 0;
+	background-image:  linear-gradient(to top, rgb(131, 99, 40, 0.9), rgb(131, 99, 40, 0.9)),
+   url("../img/helpUImg.png");
+   background-position: 0 0; 
+   background-repeat: no-repeat; 
+   background-size: cover;
+}
+.helpU__container{
+	text-align: center;
+	padding: 5% 0;
+}
+.helpU__text{
+	font-weight: 700;
+	font-size: 2.3rem;
+	line-height: 132%;
+	color: #FFFFFF;
+}
+@media (max-width: 880px) {
+	.helpU__text{
+		font-size: 1.8rem;
+	}
+}
+/* ===============investment================== */
+.investment{
+	margin: 0 2% 8% 2%;
+}
+.investment__container{
+	border: 2px solid #b49325;
+}
+.investment__title{
+	text-align: center;
+	font-weight: 700;
+	font-size: 2.3rem;
+	line-height: 132%;
+	color: #000000;
+}
+.investment__content_item{
+	font-weight: 400;
+	font-size: 1.125rem;
+	line-height: 150%;
+	margin: 2% 2% 2% 2%;
+	color: #000000;
+}
+
+/* =================slider=============== */
+.swiper{
+	margin: 8% auto;
+}
+
+
+.swiper-wrapper{
+	display: flex;
+	gap: 0;
+}
+.swiper-slide{
+	padding: 0 2%;
+}
+
+
+
+.swiper__title{
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 118%;
+	color: #000000;
+	margin: 0 0 20px 0;
+}
+.swiper__list{
+	margin: 0 5% 5% 4%;
+}
+.swiper__item{
+	font-weight: 400;
+	font-size: 1.125rem;
+	color: #000000;
+	margin-top: 1.5%;
+	
+}
+
+@media (max-width: 768px) {
+	.swiper-button-prev{
+		display: none;
+	}
+	.swiper-button-next{
+		display: none;
+	}
+}
+
+/* ===================footer================ */
+.footer{
+	background: #232626;
+	padding: 2% 1%;
+}
+.contact{
+	margin: 3% 0 0 0;
+	padding: 1% 0 0 0;
+	border-top: 1px solid #434546;
+}
+.contact p{
+	font-weight: 400;
+	font-size: 0.9375rem;
+	color: #FFFFFF;
+}
+@media (max-width: 768px) {
+	.contact p{
+		font-size: 0.7rem;
 	}
 }
