@@ -359,9 +359,20 @@ main{
 	border-top: 1px solid #434546;
 }
 .contact p{
+	flex: 1 0 auto;
+
 	font-weight: 400;
 	font-size: 0.9375rem;
 	color: #FFFFFF;
+}
+.contact{
+	display: flex;
+}
+.E-mail{
+	font-weight: 400;
+	font-size: 0.9375rem;
+	color: #FFFFFF;
+	margin: 0 2% 0 0;
 }
 @media (max-width: 768px) {
 	.contact p{
@@ -375,5 +386,9 @@ main{
 	}
 	.swiper__item{
 		font-size: 0.9rem;
+	}
+	.E-mail{
+		font-size: 0.4rem;
+
 	}
 }
