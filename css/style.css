@@ -367,4 +367,13 @@ main{
 	.contact p{
 		font-size: 0.7rem;
 	}
+	.helpU__text{
+		font-size: 1.5rem;
+	}
+	.swiper__title{
+		font-size: 1.4rem;
+	}
+	.swiper__item{
+		font-size: 0.9rem;
+	}
 }
